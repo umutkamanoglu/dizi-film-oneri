@@ -40,7 +40,7 @@ export default function Hero() {
       }}
     >
       <button
-        className="bg-violet-700 p-2 px-5 rounded-full right-2 top-2 absolute cursor-pointer"
+        className="bg-violet-700 p-2 px-5 rounded-full right-2 top-2 absolute cursor-pointer transition-all duration-300 hover:scale-110"
         onClick={async () => {
           const request = await axios.get("/api/movie/popular");
           const response =
@@ -55,7 +55,7 @@ export default function Hero() {
         <TbRefresh size={24} color="#fff" />
       </button>
 
-      <button className="bg-violet-700 p-2 px-5 rounded-full right-2 bottom-5 absolute cursor-pointer">
+      <button className="bg-violet-700 p-2 px-5 rounded-full right-2 bottom-5 absolute cursor-pointer transition-all duration-300 hover:scale-105">
         See Movie Details
       </button>
 
