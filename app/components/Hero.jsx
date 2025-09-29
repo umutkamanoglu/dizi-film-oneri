@@ -13,7 +13,7 @@ export default function Hero() {
       const request = await axios.get("/api/movie/popular");
       const response =
         await request.data.data.results[
-          Math.floor(Math.random() * request.data.data.results.length)
+          Math.floor(Math.random() * request.data.data.results.length - 1)
         ];
       console.log(response);
       setData(response);
